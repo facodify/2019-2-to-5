@@ -4,6 +4,9 @@
 // (or at max position if none match)
 // Based on https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d 
 //
+// Example1: First message from email conversation
+//   truncByPattern(emailConversation, [/(^From: )/m, /(-+Original Message-+)/m, /On\s+.+\w@\w.+\s+wrote:/m])
+//
 function truncByPattern (blobstr, patts = [/\W+/], maxPos=2000) {       
     //some guardrails
     if (blobstr.length == 0) { return blobstr } //empty blob string
