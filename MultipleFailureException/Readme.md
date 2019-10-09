@@ -1,0 +1,2 @@
+# MultipleFailureException
+Utility class to collect multiple exceptions into a single list; this can be used with other utilities like [RetryUtility](https://github.com/facodify/2019-2-to-5/tree/master/RetryUtility).
