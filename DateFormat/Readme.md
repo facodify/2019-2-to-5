@@ -1,0 +1,2 @@
+# Date2Str
+Yet another date formatting function for JavaScript.  This one is more interesting due to the String replace() method using regular expression and smart use of String slice() method to access 'key' for JS map data structure.
