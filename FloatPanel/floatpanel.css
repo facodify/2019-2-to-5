@@ -1,0 +1,55 @@
+/* cerner_2^5_2019
+ * CSS to create right side floating panel that stick to top edge
+ * Based on https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7
+ *
+ * Example1: Simple web page with div sections using css classes below
+   <div class="wrapper">
+     <div class="main">
+        Main content with long text to make page scrollable...
+        
+     </div>
+     <div class="sidebar">
+        Table of contents with links to sections...
+        
+     </div>
+   </div>
+
+ * Example2: Confluence wiki page using macro for div and css stylesheet
+   {div macro with class=sidebar box}
+       {toc macro}
+    
+   {div macro with class=main}
+        Main content with long text to make page scrollable...
+
+   {css macro}
+        paste style defs below
+*/
+
+/* wrapper to contain all of page content */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* container for main content on page, with width that does not overlap with right float panel */
+.main {
+  width: 80%;
+}
+/* panel box with border and background color  */
+.box {
+	background: rgb(240,240,240);
+	border: 1px solid #0096d6;
+	padding: 5px;
+}
+/* float panel using position: sticky  */
+.sidebar {
+  width: 20%;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/* links inside float panel can be styled on mouse hover */
+.sidebar a:hover {
+  font-weight: bold;
+  background: rgb(210,210,210);
+}

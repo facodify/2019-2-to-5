@@ -1,0 +1,4 @@
+# FloatPanel
+CSS to create floating panel that sticks to top edge as you scroll down on page (without using any JavaScript).  For pages with alot of content divided into sections that results in scrolling, this kind of panel can be used to display a "table of contents" on right side that stays in view all the time, allowing user to jump to different sections with ease. Most browsers now support the CSS style of "position: sticky".  Even better, this stylesheet can also be used in Confluence wiki pages; see examples in code comments.
+
+As an example web page, see https://www.markdownguide.org/basic-syntax/ Note: this page has additional feature to indicate scroll position of page by highlighting text inside the floating panel; that is not the focus of this CSS stylesheet.  However an example of mouse hover to change the font and background is included for similar effect. 
