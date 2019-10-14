@@ -1,5 +1,5 @@
 /* cerner_2^5_2019
- * CSS to create right side floating panel that stick to top edge
+ * CSS to create right side floating panel that sticks to top edge
  * Based on https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7
  *
  * Example1: Simple web page with div sections using css classes below
@@ -32,24 +32,19 @@
 }
 /* container for main content on page, with width that does not overlap with right float panel */
 .main {
-  width: 80%;
+  width: 85%; 
+  padding-right: 20px;
 }
 /* panel box with border and background color  */
 .box {
 	background: rgb(240,240,240);
 	border: 1px solid #0096d6;
-	padding: 5px;
 }
-/* float panel using position: sticky  */
+/* float panel using position: sticky */
 .sidebar {
-  width: 20%;
+  width: 15%;
   height: fit-content;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-/* links inside float panel can be styled on mouse hover */
-.sidebar a:hover {
-  font-weight: bold;
-  background: rgb(210,210,210);
 }
