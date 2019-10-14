@@ -1,0 +1,55 @@
+/* cerner_2^5_2019
+ * CSS to create responsive two-column layout using @media
+ * For wider screen size page layout is 2 columns side-by-side.
+ * For smaller screens size when width of viewport is below 600px, automatically change to stacked layout
+ *
+ * Example1: Simple web page with div sections using css classes below
+ 
+   <div class="wrapper">
+     <div class="side">
+        Side column content (smaller); for example table of contents etc
+        ...
+     </div>
+     <div class="main">
+        Main column content (larger) with longer text to make page scrollable
+        ...
+     </div>
+   </div>
+
+*/
+
+/* Consisten sizing for all elements (include the padding and border in an element's total width and height) */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+}
+
+/* Container for overall layout of page with two columns side-by-side */
+.wrapper {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Side panel / left / first column */
+.side {
+  flex: 20%; 
+  background-color: #f1f1f1;
+}
+
+/* Main content / right column */
+.main {
+  flex: 80%; 
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other */
+@media (max-width: 600px) {
+  .wrapper {   
+    flex-direction: column;
+    flex: 100%
+  }
+}

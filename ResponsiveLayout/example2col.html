@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Responsive Two-Column Layout</title>
+    <link rel="stylesheet" type="text/css" href="responsivecols.css">
+    
+    <style>
+/* Additional styles for left side navigation bar listed here
+   so that css file above can focus on responsive column layout
+*/
+
+/* side panel list style */
+.side ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.side li a {
+  display: block;
+  padding: 2px 16px;
+  text-decoration: none;
+}
+/* side panel links can be styled on mouse hover */
+.side li a:hover {
+  background: #cfcfcf; 
+}
+/* style highlight for user instruction */
+b.instr {
+  background: #ffff66; 
+}
+    </style>
+</head>
+
+<body>
+
+<!-- The flexible grid (content) -->
+<div class="wrapper">
+    
+    <div class="side">
+
+<ul>
+<li>On this page:</li>
+<li><a href="">Section A</a></li>
+<li><a href="">Section B</a></li>
+<li><a href="">Section C</a></li>
+<li><a href="">Section D</a></li>
+<li><a href="">Section E</a></li>
+<li><a href="">Section F</a></li>
+</ul>
+
+   </div>
+
+   <div class="main">
+<b class="instr">CHANGE THE WIDTH OF THIS WINDOW TO SEE CHANGE IN LAYOUT</b>
+
+<h1>Section A</h1>
+Some text here.  This is section A of the Introduction page. This text is supposed to get really long so that it can wrap around the page when it is rendered and hits the boundary of some neighboring components that may be set to "float" around this text.
+
+<h1>Section B</h1>
+Some text here.  This is section B of the Introduction page.
+
+<h1>Section C</h1>
+Some text here.  This is section C of the Introduction page. This text is supposed to get really long so that it can wrap around the page when it is rendered and hits the boundary of some neighboring components that may be set to "float" around this text.
+
+<h1>Section D</h1>
+Some text here.  This is anoher section. 
+
+<h1>Section E</h1>
+Some text here.  This is anoher section. This text is supposed to get really long so that it can wrap around the page when it is rendered and hits the boundary of some neighboring components that may be set to "float" around this text.
+
+<h1>Section F</h1>
+Some text here.  This is anoher section. 
+   </div>
+</div>
+</body>
+</html>
